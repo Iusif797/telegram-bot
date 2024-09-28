@@ -1,12 +1,12 @@
-import os
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from telegram.ext import Application, CommandHandler
 
-# Получаем токен бота из переменных окружения
-TOKEN = os.getenv('7008997408:AAGn4ug4q4ok9rFDXguPqnqgjqR1-deZyjI')
+# Ваш токен бота
+TOKEN = '7008997408:AAGn4ug4q4ok9rFDXguPqnqgjqR1-deZyjI'
 
 # URL вашего веб-приложения (Web App)
-WEB_APP_URL = 'https://telegram-expense-tracker.vercel.app/'  # Ваша ссылка на мини-приложение
+WEB_APP_URL = 'https://my-budget7.vercel.app/'
 
 async def start(update: Update, context):
     # Создаем кнопку для открытия Web App прямо в Telegram
